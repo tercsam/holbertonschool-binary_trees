@@ -1,6 +1,6 @@
-#include "main.h"
+#include "binary_trees.h"
 
-int binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
  binary_tree_t *new_node;
 
@@ -13,7 +13,7 @@ if (new_node == NULL)
 
 new_node-> n = value;
 new_node-> parent = parent;
-new_node-> left = NULL
+new_node-> left = NULL;
 
 if(parent->right != NULL)
 {
@@ -29,4 +29,5 @@ else
 parent->right = new_node;
 
 return (new_node);
-} 
+}
+
