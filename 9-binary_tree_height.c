@@ -1,6 +1,8 @@
 #include "binary_trees.h"
 /**
- *
+ * binary_tree_height - measure binary tree height
+ * @tree: root node
+ * Return: the maximum value between left and right or 0 if NULL
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
